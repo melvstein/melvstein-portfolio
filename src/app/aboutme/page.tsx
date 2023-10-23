@@ -1,12 +1,14 @@
 import Header from "../components/Header"
 
-export default function Page() {
+const AboutMe = () => {
     return (
         <div>
             <Header/>
-            <div className="my-body bg-red-200">
+            <div className="p-4 h-screen bg-red-200">
             <h1>About me</h1>
             </div>
         </div>
     )
 }
+
+export default AboutMe;

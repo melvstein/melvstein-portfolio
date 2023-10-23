@@ -1,7 +1,9 @@
 import Nav from "./Nav.jsx"
 
-export default function Header() {
+const Header = () => {
     return (
         <Nav/>
     );
-  }
+}
+
+export default Header;
