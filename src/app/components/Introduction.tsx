@@ -9,6 +9,8 @@ const Introduction = () => {
                 // Same substring at the start will only be typed out once, initially
                 'Hi',
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
+                "I'm a Web Developer",
+                1000,
                 "I'm Melvstein"
             ]}
             wrapper="span"
