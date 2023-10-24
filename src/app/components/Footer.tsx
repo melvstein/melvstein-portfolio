@@ -1,8 +1,10 @@
 const Footer = () => {
     return (
-        <div className="flex items-center justify-center p-4 bg-slate-500">
-            Melvstein Portfolio 2023
-        </div>
+        <>
+            <div className="relative flex items-center justify-center p-4 bg-slate-500 bottom-0 right-0 left-0">
+                Melvstein Portfolio 2023
+            </div>
+        </>
     );
 }
 

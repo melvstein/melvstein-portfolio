@@ -8,14 +8,18 @@ const navLinks = [
         title: 'Melvstein'
     },
     {
-        href: '/contactme',
+        href: '#skills',
+        title: 'Skills'
+    },
+    {
+        href: '#contactme',
         title: 'Contact Me'
     }
 ];
 
 const Nav = () => {
     return (
-        <nav className='fixed top-0 left-0 right-0 z-10 flex flex-wrap items-stretch justify-between mx-auto bg-slate-500 bg-opacity-90'>
+        <nav className='fixed top-0 left-0 right-0 z-10 flex flex-wrap items-stretch justify-between mx-auto bg-slate-500 bg-opacity-95 border-b-black border-b-2'>
             <Link href="/" className='flex items-center justify-center gap-2 p-4 hover:bg-blue-500'>
                 <ProfilePicture />
             </Link>
