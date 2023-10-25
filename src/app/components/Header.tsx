@@ -1,8 +1,8 @@
-import Nav from "./Nav.jsx"
+import Navbar from "./Navbar.jsx"
 
 const Header = () => {
     return (
-        <Nav/>
+        <Navbar />
     );
 }
 

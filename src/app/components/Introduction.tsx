@@ -17,7 +17,7 @@ const Introduction = () => {
             speed={50}
             repeat={0}
             cursor={true}
-            className='text-white font-bold text-9xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500'
+            className='font-bold text-9xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500'
         />
         {/* <h1 className='text-white font-bold text-9xl rounded-lg relative w-[max-content] font-mono
             before:absolute before:inset-0 before:animate-typewriter

@@ -4,23 +4,31 @@ import Footer from './components/Footer'
 import Introduction from './components/Introduction';
 import Skills from './components/Skills';
 import ContactForm from './components/ContactForm';
+import Navbar from './components/Navbar';
 
 const Home = () => {
   return (
-    <main>
-        <Header/>
-        <div className='h-auto mx-auto mt-[70px]'>
-            <div className='intro flex items-start justify-start p-4 m-4 h-screen'>
-                <Introduction />
+    <main className='font-mono'>
+        {/* <Header/> */}
+        <div className='h-auto mx-auto bg-gradient-to-b from-cyan-500 to-blue-500'>
+            <div id="introduction">
+                <div className='flex items-center justify-center h-screen bg-slate-800'>
+                    <Introduction />
+                </div>
             </div>
-            <div id="skills" className='relative bg-blue-200 text-black space-y-4 h-screen py-[100px] px-4'>
-                <Skills />
+            <div id="skills">
+                <div className='relative bg-blue-200 text-black space-y-4 h-screen p-4'>
+                    <Skills />
+                </div>
             </div>
-            <div id="contactme" className='contact-form h-screen flex items-center justify-center p-4 bg-gradient-to-r from-cyan-500 to-blue-500'>
-                <ContactForm />
+            <div id="contactme">
+                <div className='contact-form h-screen flex items-center justify-center p-4 bg-gradient-to-r from-cyan-500 to-blue-500'>
+                    <ContactForm />
+                </div>
             </div>
         </div>
-        <Footer/>
+        <Navbar />
+        {/* <Footer/> */}
     </main>
   )
 }
