@@ -1,4 +1,4 @@
-const Skills = () => {
+const SkillSection = () => {
     const skills = [
         'ReactJs',
         'PHP',
@@ -6,7 +6,7 @@ const Skills = () => {
     ];
 
     return (
-        <div className="p-4">
+        <section id='skills' className='relative bg-blue-200 text-black space-y-4 h-screen p-4'>
             <h1 className='text-black font-bold text-5xl'>
                 Skills
             </h1>
@@ -19,8 +19,8 @@ const Skills = () => {
                     ))
                 }
             </ul>
-        </div>
+        </section>
     )
 }
 
-export default Skills;
+export default SkillSection;
