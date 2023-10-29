@@ -5,14 +5,19 @@ import IntroductionSection from './components/IntroductionSection';
 import SkillSection from './components/SkillSection';
 import ContactSection from './components/ContactSection';
 import Navbar from './components/Navbar';
+import BreakLine from './components/BreakLine';
 
 const Home = () => {
   return (
-    <main className='mx-auto font-mono scroll-smooth'>
-        <IntroductionSection />
-        <SkillSection />
-        <ContactSection />
-        <Navbar />
+    <main className='bg-black'>
+        <div className='mx-auto font-mono scroll-smooth'>
+            <IntroductionSection />
+            <BreakLine />
+            <SkillSection />
+            <BreakLine />
+            <ContactSection />
+            <Navbar />
+        </div>
     </main>
   )
 }

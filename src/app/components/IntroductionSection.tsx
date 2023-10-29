@@ -4,10 +4,22 @@ import { TypeAnimation } from 'react-type-animation';
 
 const IntroductionSection = () => {
     return (
-        <section id='introduction' className='h-screen bg-slate-800'>
-        <div className='grid grid-cols-1 md:grid-cols-12'>
-            <div className='col-span-6 md:h-screen p-4'>
-                <div className='flex flex-col space-y-4'>
+        <section id='introduction' className='container mx-auto h-screen bg-black'>
+        <div className='flex flex-col'>
+            <div className='flex items-center justify-center py-[50px]'>
+                <div className='w-[200px] h-[200px] md:w-[400px] md:h-[400px]'>
+                    <Image
+                        src="/images/melvstein.jpg"
+                        width={500}
+                        height={500}
+                        alt="Picture of the author"
+                        priority={true}
+                        className='rounded-full p-[1px] bg-gradient-to-r from-cyan-500 to-blue-500'
+                    />
+                </div>
+            </div>
+            <div className='flex items-center justify-center p-4'>
+                <div className='flex flex-col space-y-4 [&>*]:mx-auto'>
                     <span className='select-none uppercase text-slate-300 text-3xl md:text-5xl lg:text-7xl font-bold'>
                         {"Hi, I'm"}
                     </span>
@@ -24,26 +36,6 @@ const IntroductionSection = () => {
                         speed={50}
                         repeat={Infinity}
                         className='select-none uppercase font-bold text-4xl md:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500'
-                    />
-                </div>
-                <ul className='space-y-4 list-disc p-4 text-lg'>
-                    <li>
-                        I live in Type B NBP Reservation, Poblacion, Muntinlupa City
-                    </li>
-                    <li>
-                        {"I'm 27 years old"}
-                    </li>
-                </ul>
-            </div>
-            <div className='col-span-6 flex items-center justify-center h-full md:h-screen bg-gradient-to-r from-cyan-500 to-blue-500'>
-                <div className='w-[200px] h-[200px] md:w-[400px] md:h-[400px]'>
-                    <Image
-                        src="/images/melvstein.jpg"
-                        width={500}
-                        height={500}
-                        alt="Picture of the author"
-                        priority={true}
-                        className='border-slate-500 border rounded-full'
                     />
                 </div>
             </div>

@@ -1,6 +1,6 @@
 const ContactSection = () => {
     return (
-        <section id='contactme' className='contact-form h-screen flex items-center justify-center p-4 bg-gradient-to-r from-cyan-500 to-blue-500'>
+        <section id='contactme' className='container mx-auto h-screen flex items-center justify-center p-4 bg-black'>
             <form className="flex flex-col gap-y-4 w-[500px] bg-slate-200 bg-opacity-50 p-8 rounded">
                 <div className="flex flex-col gap-y-2">
                     <label htmlFor="subject" className="text-black">Email</label>

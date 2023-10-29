@@ -6,8 +6,8 @@ const SkillSection = () => {
     ];
 
     return (
-        <section id='skills' className='relative bg-blue-200 text-black space-y-4 h-screen p-4'>
-            <h1 className='text-black font-bold text-5xl'>
+        <section id='skills' className='container mx-auto text-white bg-black space-y-4 h-screen p-4'>
+            <h1 className='font-bold text-5xl'>
                 Skills
             </h1>
             <ul className="list-disc marker:text-red-500">

@@ -8,7 +8,7 @@ const ProfilePicture = () => {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className='border-slate-500 border rounded-full'
+                className='rounded-full p-[1px] bg-gradient-to-r from-cyan-500 to-blue-500'
                 priority={true}
             />
         </div>
