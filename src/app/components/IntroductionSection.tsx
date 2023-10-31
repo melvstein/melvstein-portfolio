@@ -5,7 +5,7 @@ import ProfilePicture from './ProfilePicture';
 
 const IntroductionSection = () => {
     return (
-        <section id='introduction' className='container mx-auto h-screen bg-black'>
+        <section id='introduction' className='container mx-auto h-screen bg-black p-4'>
         <div className='flex flex-col'>
             <div className='flex items-center justify-center py-[50px]'>
                 <div className='w-[200px] h-[200px] md:w-[400px] md:h-[400px]'>

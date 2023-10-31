@@ -29,13 +29,13 @@ const Navbar = (props: { position: string }) => {
         return (
             <div className="fixed bottom-0 left-0 right-0 z-10 mx-auto bg-black">
                 <nav className="flex items-stretch justify-between mx-auto rounded-t-3xl uppercase bg-gradient-to-t from-cyan-500 to-blue-500 pt-[1px]">
-                <Link href="/" className="flex items-center justify-center gap-2 px-6 py-2 bg-black hover:bg-gradient-to-r from-cyan-500 to-blue-500 rounded-tl-3xl">
+                <Link href="/" className="flex items-center justify-center gap-2 px-4 py-2 bg-black hover:bg-gradient-to-r from-cyan-500 to-blue-500 rounded-tl-3xl">
                     <ProfilePicture width={50} height={50}/> {"Melvstein"}
                 </Link>
     
                 {
                     navLinks.map((link, key) => (
-                        <Link href={link.href} className={navLinksLastKey == key ? "flex items-center justify-center px-6 bg-black hover:bg-gradient-to-r from-cyan-500 to-blue-500 rounded-tr-3xl" : "flex items-center justify-center px-6 bg-black hover:bg-gradient-to-r from-cyan-500 to-blue-500"} key={link.id}>
+                        <Link href={link.href} key={link.id} className="flex items-center justify-center px-4 bg-black hover:bg-gradient-to-r from-cyan-500 to-blue-500">
                             {link.title}
                         </Link>
                     ))
