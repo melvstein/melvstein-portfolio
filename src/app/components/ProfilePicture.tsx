@@ -1,12 +1,15 @@
 import Image from 'next/image';
 
-const ProfilePicture = () => {
+const ProfilePicture = (props: {
+    width: number,
+    height: number
+}) => {
     return (
-        <div>
+        <div className='pointer-events-none'>
             <Image
                 src="/images/melvstein.jpg"
-                width={50}
-                height={50}
+                width={props.width}
+                height={props.height}
                 alt="Picture of the author"
                 className='rounded-full p-[1px] bg-gradient-to-r from-cyan-500 to-blue-500'
                 priority={true}

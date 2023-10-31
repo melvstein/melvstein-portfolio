@@ -1,4 +1,4 @@
-const SkillSection = () => {
+const SkillsSection = () => {
     const skills = [
         'ReactJs',
         'PHP',
@@ -23,4 +23,4 @@ const SkillSection = () => {
     )
 }
 
-export default SkillSection;
+export default SkillsSection;

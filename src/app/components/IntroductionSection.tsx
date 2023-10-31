@@ -1,6 +1,7 @@
 
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
+import ProfilePicture from './ProfilePicture';
 
 const IntroductionSection = () => {
     return (
@@ -8,14 +9,7 @@ const IntroductionSection = () => {
         <div className='flex flex-col'>
             <div className='flex items-center justify-center py-[50px]'>
                 <div className='w-[200px] h-[200px] md:w-[400px] md:h-[400px]'>
-                    <Image
-                        src="/images/melvstein.jpg"
-                        width={500}
-                        height={500}
-                        alt="Picture of the author"
-                        priority={true}
-                        className='rounded-full p-[1px] bg-gradient-to-r from-cyan-500 to-blue-500'
-                    />
+                    <ProfilePicture width={500} height={500}/>
                 </div>
             </div>
             <div className='flex items-center justify-center p-4'>
