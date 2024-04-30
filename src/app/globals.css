@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --color-primary: 93 184 248;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,13 +18,17 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    @apply min-h-screen text-black bg-sky-300 relative;
+}
+
+@layer components {
+    .nav {
+        @apply flex items-center justify-between bg-sky-300;
+    }
+
+    .nav-link {
+        @apply flex items-center justify-center hover:bg-sky-300 hover:text-slate-500 h-10 px-4;
+    }
 }
 
 @layer utilities {
