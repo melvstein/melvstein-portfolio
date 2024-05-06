@@ -8,6 +8,7 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 export default function Page() {
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
+
     return (
         <div className="min-h-screen flex items-center justify-center">
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">

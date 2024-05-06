@@ -3,9 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import HomeLink from "./components/home/HomeLink";
-import SkillsLink from "./components/skills/SkillsLink";
-import ProjectsLink from "./components/projects/ProjectsLink";
+import HomeLink from "./components/navlinks/HomeLink";
+import ResumeLink from "./components/navlinks/ResumeLink";
+import SkillsLink from "./components/navlinks/SkillsLink";
+import ProjectsLink from "./components/navlinks/ProjectsLink";
+import ContactLink from "./components/navlinks/ContactLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,8 +27,9 @@ export default function RootLayout({
             <main>
                 {/* <Navbar /> */}
                 <HomeLink />
-                <SkillsLink />
+                <ResumeLink />
                 <ProjectsLink />
+                <ContactLink />
                 {children}
                 {/* <Footer /> */}
             </main>
