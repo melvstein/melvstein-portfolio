@@ -10,7 +10,9 @@ export default function WidgetResume() {
 
     return (
         <div className="widget w-full flex items-start justify-center space-y-4 flex-col">
-            <h1 className="font-bold border-b border-slate-400 w-full uppercase text-xl">Resume</h1>
+            <h1 className="widget-header">
+                Resume
+            </h1>
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
                 <a href="/resume" className='h-auto w-full'>
                     <Viewer

@@ -31,6 +31,9 @@ body {
     .widget {
         @apply bg-gradient-to-b from-sky-900 to-slate-800 p-8 rounded-2xl bg-opacity-50 shadow hover:bg-gradient-to-r hover:from-sky-800 hover:to-slate-800;
     }
+    .widget-header {
+        @apply font-bold text-slate-300 w-full uppercase text-xl border-slate-500 border-b border-r rounded-br-lg;
+    }
     .icon {
         @apply rounded-full p-4;
     }
@@ -38,7 +41,7 @@ body {
         @apply fill-white w-[25px];
     }
     .skill-svg {
-        @apply fill-white bg-gradient-to-r from-sky-900 to-slate-800 rounded-lg w-[50px] p-2 shadow shrink-0;
+        @apply fill-white bg-sky-800 rounded-lg w-[50px] p-2 shadow shrink-0;
     }
     .profile-svg {
         @apply fill-slate-900 bg-white rounded-lg w-[50px] p-2 shadow shrink-0;
