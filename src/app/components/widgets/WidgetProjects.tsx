@@ -1,7 +1,7 @@
 export default function WidgetProjects() {
     return (
         <div className="widget w-full space-y-4">
-            <h1 className="font-bold text-3xl">Projects</h1>
+            <h1 className="font-bold text-3xl border-b border-slate-400">Projects</h1>
             <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center justify-center flex-col">
                     <h1 className="font-bold text-2xl">HRIS</h1>
