@@ -1,23 +1,61 @@
+"use client"
+
 import Image from "next/image";
 import WidgetProfile from "../widgets/WidgetProfile";
 import WidgetSkills from "../widgets/WidgetSkills";
 import WidgetProjects from "../widgets/WidgetProjects";
 import WidgetResume from "../widgets/WidgetResume";
 import WidgetContact from "../widgets/WidgetContact";
+import { motion } from "framer-motion";
 
 export default function HomeSection() {
     return (
-        <section id="home_section" className="min-h-screen py-[100px] px-[100px] xl:px-[350px] bg-slate-900 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section id="home_section" className="min-h-screen py-4 px-4 md:py-[100px] md:px-[100px] xl:px-[350px] bg-slate-900 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="flex flex-col items-center justify-start gap-4">
-                <WidgetProfile />
-                <WidgetResume />
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="w-full"
+                >
+                    <WidgetProfile />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="w-full"
+                >
+                    <WidgetResume />
+                </motion.div>
             </div>
             <div className="flex flex-col items-center justify-start gap-4">
-                <WidgetContact />
-                <WidgetSkills />
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="w-full"
+                >
+                    <WidgetContact />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="w-full"
+                >
+                    <WidgetSkills />
+                </motion.div>
             </div>
             <div className="flex flex-col items-center justify-start gap-4">
-                <WidgetProjects />
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="w-full"
+                >
+                    <WidgetProjects />
+                </motion.div>
             </div>
         </section>
     );

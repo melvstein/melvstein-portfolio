@@ -14,7 +14,7 @@ export default function WidgetResume() {
                 Resume
             </h1>
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
-                <a href="/resume" className='h-auto w-full'>
+                <a href="/resume" className='h-auto w-full z-0'>
                     <Viewer
                         fileUrl="/files/melvstein_resume.pdf"
                     />
