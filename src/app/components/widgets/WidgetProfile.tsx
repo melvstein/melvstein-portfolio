@@ -29,7 +29,7 @@ export default function WidgetProfile() {
                     Fullstack Web Developer
                 </p>
             </div>
-            <div className="flex items-center justify-center space-x-4 ">
+            <div className="flex items-center justify-center space-x-4">
                 <motion.a
                     href=""
                     whileHover={{ scale: 1.2 }}
