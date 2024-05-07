@@ -22,15 +22,14 @@ export default function WidgetProfile() {
                 />
             </motion.div>
             <div className="flex items-center justify-center flex-col">
-                <p className="font-bold text-xl">
+                <p className="font-bold text-base md:text-xl">
                     Melvin Justine L. Bayogo
                 </p>
-                <p className="font-bold text-sm text-slate-400 border-slate-500 border-b border-r rounded-br-lg px-2">
+                <p className="font-bold text-xs md:text-sm text-slate-400 border-slate-500 border-b border-r rounded-br-lg px-2">
                     Fullstack Web Developer
                 </p>
             </div>
             <div className="flex items-center justify-center space-x-4 ">
-                
                 <motion.a
                     href=""
                     whileHover={{ scale: 1.2 }}
