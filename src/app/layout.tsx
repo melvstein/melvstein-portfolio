@@ -8,6 +8,7 @@ import ResumeLink from "./components/navlinks/ResumeLink";
 import SkillsLink from "./components/navlinks/SkillsLink";
 import ProjectsLink from "./components/navlinks/ProjectsLink";
 import ContactLink from "./components/navlinks/ContactLink";
+import Sidebar from "./components/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,11 +26,12 @@ export default function RootLayout({
     <html lang="en">
         <body>
             <main>
+                <Sidebar />
                 {/* <Navbar /> */}
-                <HomeLink />
+                {/* <HomeLink />
                 <ResumeLink />
                 <ProjectsLink />
-                <ContactLink />
+                <ContactLink /> */}
                 {children}
                 {/* <Footer /> */}
             </main>
