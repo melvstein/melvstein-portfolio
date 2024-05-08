@@ -18,7 +18,7 @@
 }
 
 body {
-    @apply relative h-screen text-white bg-slate-950 font-mono;
+    @apply relative h-screen text-white bg-slate-900 font-mono;
 }
 
 @layer components {
@@ -29,10 +29,13 @@ body {
         @apply flex items-center justify-center hover:bg-sky-300 hover:text-slate-500 h-10 px-4;
     }
     .widget {
-        @apply bg-gradient-to-b from-sky-900 to-slate-800 p-8 rounded md:rounded-2xl bg-opacity-50 shadow hover:bg-gradient-to-r hover:from-sky-800 hover:to-slate-800;
+        @apply bg-gradient-to-b from-sky-900 to-slate-800 rounded md:rounded-2xl shadow hover:bg-gradient-to-r hover:from-sky-900 hover:to-sky-900;
     }
     .widget-header {
-        @apply font-bold text-slate-300 w-full uppercase text-xl border-slate-500 border-b border-r rounded-br-lg;
+        @apply font-bold text-slate-300 w-full uppercase text-xl border-slate-500 px-4 py-2 bg-slate-900 bg-opacity-50;
+    }
+    .widget-container {
+        @apply p-4 md:p-8 w-full;
     }
     .icon {
         @apply rounded-full p-4;
@@ -41,10 +44,10 @@ body {
         @apply fill-white w-[25px];
     }
     .skill-svg {
-        @apply fill-white bg-sky-800 rounded-lg w-[50px] h-[50px] p-2 shadow shrink-0;
+        @apply fill-white bg-sky-800 rounded-lg size-[50px] p-2 shadow shrink-0;
     }
     .profile-svg {
-        @apply fill-slate-900 bg-white rounded-lg w-[50px] h-[50px] p-2 shadow shrink-0;
+        @apply fill-slate-900 bg-white rounded-lg size-[50px] p-2 shadow shrink-0;
     }
 }
 
