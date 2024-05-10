@@ -44,7 +44,7 @@ body {
         @apply fill-white w-[25px];
     }
     .skill-svg {
-        @apply fill-white bg-sky-800 rounded-lg size-[50px] p-2 shadow shrink-0;
+        @apply fill-white bg-slate-900 rounded-lg size-[50px] p-2 shadow shrink-0;
     }
     .profile-svg {
         @apply fill-slate-900 bg-white rounded-lg size-[50px] p-2 shadow shrink-0;

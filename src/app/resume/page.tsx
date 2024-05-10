@@ -10,7 +10,7 @@ export default function Page() {
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
     return (
-        <div className="min-h-screen flex items-center justify-center">
+        <div className="min-h-screen container mx-auto flex items-center justify-center">
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
                 <div className='h-[800px] w-[900px]'>
                     <Viewer
