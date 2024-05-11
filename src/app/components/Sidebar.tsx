@@ -2,6 +2,7 @@
 "use client"
 
 import { useState } from "react";
+import MelvsteinLogoSvg from "./logo/MelvsteinLogoSvg";
 import DisplayPicture from "./DisplayPicture";
 import Link from "next/link";
 import HomeLink from "./navlinks/HomeLink";
