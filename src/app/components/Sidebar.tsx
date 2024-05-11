@@ -21,7 +21,7 @@ export default function Sidebar() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => {setIsOpen(!isOpen)}}
-                className="z-10 fixed top-[20px] left-[20px] uppercase flex items-center justify-center border-white border-2 rounded-full cursor-pointer"
+                className="z-10 fixed top-[20px] left-[20px] uppercase flex items-center justify-center cursor-pointer"
             >
                 <DisplayPicture />
             </motion.button>

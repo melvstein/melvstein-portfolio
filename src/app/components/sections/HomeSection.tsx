@@ -44,7 +44,7 @@ export default function HomeSection() {
                         transition={{ duration: 0.5 }}
                         className="w-full"
                     >
-                        <WidgetContact />
+                        <WidgetProjects />
                     </motion.div>
                 </div>
                 <div className="flex flex-col items-center justify-start">
@@ -54,7 +54,7 @@ export default function HomeSection() {
                         transition={{ duration: 0.5 }}
                         className="w-full"
                     >
-                        <WidgetProjects />
+                        <WidgetContact />
                     </motion.div>
                 </div>
             </div>
