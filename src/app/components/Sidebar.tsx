@@ -17,7 +17,7 @@ export default function Sidebar() {
       }
 
     return (
-        <nav className="fixed group-hover:flex z-10">
+        <nav className="fixed group-hover:flex z-10 text-black">
             <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -30,17 +30,17 @@ export default function Sidebar() {
                 animate={isOpen ? "open" : "closed"}
                 variants={variants}
             >
-                <div className="flex items-start justify-start flex-col fixed top-[0] uppercase bg-slate-950 min-h-screen pt-[100px]">
-                    <Link href='/' className=" hover:bg-slate-800 p-4 w-full">
+                <div className="flex items-start justify-start flex-col fixed top-[0] uppercase bg-white min-h-screen pt-[100px]">
+                    <Link href='/' className="hover:text-white hover:bg-slate-900 p-4 w-full">
                         Home
                     </Link>
-                    <Link href='/resume' className=" hover:bg-slate-800 p-4 w-full">
+                    <Link href='/resume' className="hover:text-white hover:bg-slate-900 p-4 w-full">
                         Resume
                     </Link>
-                    <Link href='/projects' className=" hover:bg-slate-800 p-4 w-full">
+                    <Link href='/projects' className="hover:text-white hover:bg-slate-900 p-4 w-full">
                         Projects
                     </Link>
-                    <Link href='/contact' className=" hover:bg-slate-800 p-4 w-full">
+                    <Link href='/contact' className="hover:text-white hover:bg-slate-900 p-4 w-full">
                         Contact
                     </Link>
                 </div>
