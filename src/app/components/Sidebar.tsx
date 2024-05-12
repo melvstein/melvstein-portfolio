@@ -17,33 +17,32 @@ export default function Sidebar() {
       }
 
     return (
-        <nav className="fixed group-hover:flex z-10 text-black">
+        <nav className={`flex items-center justify-center md:justify-start flex-col md:flex-row z-10 text-black ${isOpen ? "bg-white" : ""}`}>
             <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => {setIsOpen(!isOpen)}}
-                className="z-10 fixed top-[20px] left-[20px] uppercase flex items-center justify-center cursor-pointer"
+                className={`z-10 uppercase flex items-center justify-center cursor-pointer p-4`}
             >
                 <DisplayPicture />
             </motion.button>
             <motion.nav
                 animate={isOpen ? "open" : "closed"}
                 variants={variants}
+                className={`flex items-center justify-center flex-col md:flex-row uppercase w-full font-bold ${isOpen ? "" : "hidden"}`}
             >
-                <div className="flex items-start justify-start flex-col fixed top-[0] uppercase bg-white min-h-screen pt-[100px]">
-                    <Link href='/' className="hover:text-white hover:bg-slate-900 p-4 w-full">
-                        Home
-                    </Link>
-                    <Link href='/resume' className="hover:text-white hover:bg-slate-900 p-4 w-full">
-                        Resume
-                    </Link>
-                    <Link href='/projects' className="hover:text-white hover:bg-slate-900 p-4 w-full">
-                        Projects
-                    </Link>
-                    <Link href='/contact' className="hover:text-white hover:bg-slate-900 p-4 w-full">
-                        Contact
-                    </Link>
-                </div>
+                <Link href='/' className="flex items-center justify-center hover:text-sky-500 size-full p-4">
+                    Home
+                </Link>
+                <Link href='/resume' className="flex items-center justify-center hover:text-sky-500 w-full p-4">
+                    Resume
+                </Link>
+                <Link href='/projects' className="flex items-center justify-center hover:text-sky-500 w-full p-4">
+                    Projects
+                </Link>
+                <Link href='/contact' className="flex items-center justify-center hover:text-sky-500 w-full p-4">
+                    Contact
+                </Link>
             </motion.nav>
         </nav>
     );
