@@ -7,6 +7,9 @@ import DisplayPicture from "./DisplayPicture";
 import Link from "next/link";
 import HomeLink from "./navlinks/HomeLink";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import MelvsteinLogoWhite from "../../../public/images/logo/melvstein_logo_white.png";
+import MelvsteinLogoBlue from "../../../public/images/logo/melvstein_logo_blue.png";
 
 export default function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,23 +27,25 @@ export default function Sidebar() {
                 onClick={() => {setIsOpen(!isOpen)}}
                 className={`z-10 uppercase flex items-center justify-center cursor-pointer p-4`}
             >
-                <DisplayPicture />
+                {
+                    isOpen ? <Image src={MelvsteinLogoBlue} width={50} height={50} alt="melvstein display picture" className="uppercase"/> : <Image src={MelvsteinLogoWhite} width={50} height={50} alt="melvstein display picture" className="uppercase"/>
+                }
             </motion.button>
             <motion.nav
                 animate={isOpen ? "open" : "closed"}
                 variants={variants}
                 className={`flex items-center justify-center flex-col md:flex-row uppercase w-full font-bold ${isOpen ? "" : "hidden"}`}
             >
-                <Link href='/' className="flex items-center justify-center hover:text-sky-500 size-full p-4">
+                <Link href='/' className="flex items-center justify-center hover:text-sky-900 size-full p-4">
                     Home
                 </Link>
-                <Link href='/resume' className="flex items-center justify-center hover:text-sky-500 w-full p-4">
+                <Link href='/resume' className="flex items-center justify-center hover:text-sky-900 w-full p-4">
                     Resume
                 </Link>
-                <Link href='/projects' className="flex items-center justify-center hover:text-sky-500 w-full p-4">
+                <Link href='/projects' className="flex items-center justify-center hover:text-sky-900 w-full p-4">
                     Projects
                 </Link>
-                <Link href='/contact' className="flex items-center justify-center hover:text-sky-500 w-full p-4">
+                <Link href='/contact' className="flex items-center justify-center hover:text-sky-900 w-full p-4">
                     Contact
                 </Link>
             </motion.nav>
